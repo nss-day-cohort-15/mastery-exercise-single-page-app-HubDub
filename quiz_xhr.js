@@ -1,4 +1,4 @@
-console.log("JS is here");
+console.log("Quizxhr.JS is here");
 
 function populatePage (inventory) {
   // Loop over the inventory and populate the page
