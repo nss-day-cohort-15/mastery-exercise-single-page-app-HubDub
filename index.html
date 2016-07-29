@@ -2,11 +2,21 @@
 <html>
 <head>
   <title>Car Lot</title>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="quiz.css">
 </head>
 <body>
 <h1>This will be the best car lot ever ever. Really.</h1>
 
-<script type="text/javascript" src="quiz.js"></script>
+<nav class="form-group">
+  <label>You're going to need to type stuff:</label>
+  <input type="text" id="textInputField" placeholder="type stuff in here">
+  <button id="textInputButton" class="btn btn-primary">Enter</button>
+</nav>
+
+
+<div id="carsGoHere" class="container"></div>
+
+<script type="text/javascript" src="quiz_xhr.js"></script>
 </body>
 </html>
