@@ -8,20 +8,22 @@ var CarLot = (function () {
     getInventory: function () {
 
     },
-    loadInventory: function () {
-        console.log("loadInventory starts");
+    loadInventory: function (callback) {
+      console.log("loadInventory starts");
       var inventoryLoader = new XMLHttpRequest();
       console.log("opened request");
+
       inventoryLoader.open("GET","inventory.json");
       console.log("ran GET");
       console.log(inventory);
       inventoryLoader.addEventListener("load", function(evt) {
-        inventory = JSON.parse(evt.target.responseText);
+        inventory = JSON.parse(evt.target.responseText).cars;
         console.log("hey", inventory);
-        // callback(inventory);
+        callback(inventory);
       })
-
+    inventoryLoader.send()
     }
   };
 
 })();
+
