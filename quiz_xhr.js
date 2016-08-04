@@ -5,7 +5,7 @@ function populatePage (inventory) {
   var inventoryPost = document.getElementById("carsGoHere");
   console.log("inventory", inventory);
   inventory.forEach (function(car) {
-    inventoryPost.innerHTML += `<p>Make: ${car.make}</p><p>Model: ${car.model}</p><p>Year: ${car.year}</p><p>Price: ${car.price}</p><p>Color: ${car.color}</p><p>Purchased: ${car.purchased}</p><p>Description: ${car.description}</p>`
+    inventoryPost.innerHTML += `<div class="col-sm-3"><p class>Make: ${car.make}</p><p>Model: ${car.model}</p><p>Year: ${car.year}</p><p>Price: ${car.price}</p><p>Color: ${car.color}</p><p>Purchased: ${car.purchased}</p><p>Description: ${car.description}</p></div>`
   })
    // Now that the DOM is loaded, establish all the event listeners needed
   // CarLot.activateEvents();

@@ -1,3 +1,10 @@
 h1 {
   color: green;
+  text-align: center;
+}
+
+.col-sm-3 {
+  border: black solid 1px;
+  border-radius: 8px;
+  background-color: #ADD8E6;
 }
