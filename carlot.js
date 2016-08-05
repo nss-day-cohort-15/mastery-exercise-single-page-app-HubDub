@@ -6,7 +6,7 @@ var CarLot = (function () {
 
   return {
     getInventory: function () {
-
+      return inventory
     },
     loadInventory: function (callback) {
       console.log("loadInventory starts");
@@ -15,7 +15,6 @@ var CarLot = (function () {
 
       inventoryLoader.open("GET","inventory.json");
       console.log("ran GET");
-      console.log(inventory);
       inventoryLoader.addEventListener("load", function(evt) {
         inventory = JSON.parse(evt.target.responseText).cars;
         console.log("hey", inventory);
