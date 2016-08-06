@@ -31,8 +31,6 @@ var CarLot = (function (cl) {
       console.log("activate events is on deck"); //we're getting here
       var carDivClick = document.querySelectorAll(".col-sm-3"); //cars
       console.log(carDivClick) //it finds the four car elements
-      // var buttonClicked = document.querySelector("#textInputButton"); //button
-      // console.log(buttonClicked)  //it finds the button
       // var carTarget
       // for(i = 0; i > carDivClick.length; i++) {
       //   carDivClick[i].addEventListener("click", function(evt) {
@@ -46,6 +44,9 @@ var CarLot = (function (cl) {
         changeStuffOnPage(event.currentTarget)
         })
       }
+      var buttonClicked = document.querySelector("#textInputButton"); //button
+      console.log(buttonClicked)  //it finds the button
+
   }
   return (cl)
 }(CarLot));
@@ -58,16 +59,14 @@ function changeStuffOnPage (cl) {
   document.getElementById("textInputButton").removeAttribute("disabled");
   event.currentTarget.removeAttribute("style");
   event.currentTarget.classList.add("bigBorder");
-  // var addDescription = event.currentTarget.childNode[6];
-  // console.log(addDescription);
-  // getElementById("description");
-
+  var addDescription = event.currentTarget.children[6];
+  console.log(addDescription);
   document.getElementById("textInputField").addEventListener("keydown", function(evt) {
     console.log(evt.target.value);
     // document.getElementById("textInputField").value = "";
-    // event.currentTarget.childNode[6].innerHTML += evt.key;
-    // console.log(addDescription);
-    // addDescription.innerHTML += evt.key;
+    console.log(addDescription);
+
+    addDescription.innerHTML += evt.key; //I can't believe it but it works
     // var eventKey = evt.key
     // console.log(eventKey);
     //output.innerHTML = event.target.value;
