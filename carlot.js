@@ -13,7 +13,6 @@ var CarLot = (function () {
       console.log("loadInventory starts");
       var inventoryLoader = new XMLHttpRequest();
       console.log("opened request");
-
       inventoryLoader.open("GET","inventory.json");
       console.log("ran GET");
       inventoryLoader.addEventListener("load", function(evt) {
