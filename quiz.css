@@ -7,7 +7,8 @@ h1 {
 .myCars {
   border-radius: 8px;
   background-color: #ADD8E6;
-  min-height: 250px;
+  min-height: 300px;
+  border: 2px solid;
 }
 
 .jumbotron {
@@ -15,6 +16,6 @@ h1 {
 }
 
 .bigBorder {
-  border: solid 10px;
-  background-color: gold;
+  border: solid 15px;
+  background-color: orange;
 }
