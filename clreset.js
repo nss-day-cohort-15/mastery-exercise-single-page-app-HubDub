@@ -1,7 +1,8 @@
 console.log("carlot.reset.js is on deck")
 
 var CarLot = (function (cl) {
-    cl.changeStuffOnPage = function (targetedCar) {
+
+    cl.changeStuffOnPage = function (targetedCar, someColor) {
     console.log("changestuffonpage is here");
     console.log("target?", targetedCar)
     console.log("target style border?", targetedCar.style.border)

@@ -26,7 +26,7 @@ var CarLot = (function (cl) {
       cl.resetToOriginal(event.currentTarget)
       myInputField.value = ""
       addDescription = event.currentTarget.children[6];
-      cl.changeStuffOnPage(event.currentTarget)
+      cl.changeStuffOnPage(event.currentTarget, "red")
       })
     }
     document.querySelector("#textInputButton").addEventListener("click", function (evt) {
